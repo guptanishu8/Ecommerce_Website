@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Usedbookcafe.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title>My Ecommerce site</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+ <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />      
+</head>
+     <style type="text/css">
+        #header {
+            font-family:times New Roman, Times, serif ;
+            font-size: xx-large;
+            font-weight: bolder;
+            color: #6666FF;
+            text-align: center;
+            background-color: none;
+             height: 51px;
+             width: 936px;
+             display:inline;
+         }
+         #footer {
+             height: 29px;
+         }
+
+             .style4
+         {
+             font-family: "Times New Roman", Times, serif;
+             font-size: medium;
+         }
+         .style5
+         {
+             color: #FF3300;
+         }
+         .style6
+         {
+             color: #FF0000;
+         }
+         
+                       
+         
+         
+                       
+         link
+         {
+             position: fixed;
+             list-style-type: circle;
+             list-style-position: outside;
+         }
+
+         
+                       
+         
+         
+                       
+    </style>
+<body>
+    <form id="form1" runat="server">
+        <div>
+<header id="header" runat="server"> 
+    &nbsp;&nbsp;&nbsp; 
+   <center>  
+       <asp:Image ID="Image1" runat="server" ImageUrl="~/image/logo.jpg.png"  
+           Height="83px" Width="113px" style="background-color: #FFFFFF"></asp:Image>USED BOOK CAFE </center>
+           <br />
+           <br />
+    <marquee scrollamount="10" direction="left" padding="5px" >
+        WELCOME TO USED BOOK CAFE
+        </marquee>
+</header>
+     
+
+<div id="templatemo_container">
+	<div id="templatemo_menu">
+    	<ul>
+            <li><a href="Home.aspx" >Home</a></li>
+            <li><a href="SellBook.aspx">Sell Book</a></li>
+            <li><a href="BuyBook.aspx">Buy Book</a></li>            
+            <li><a href="Register.aspx">Register</a></li> 
+             <li><a href="AboutUs.aspx">AboutUs</a></li> 
+              <li><a href="ContactUs.aspx">ContactUs</a></li> 
+            <li><a href="FeedbackUs.aspx">FeedbackUs</a></li>
+                       <%
+                if (Session["user"] == null)
+                {
+                    %><li><a href="Login.aspx">Login</a></li>
+                     <%
+                }
+                else
+                {%><li><a href="Logout.aspx">Logout</a><li>
+                <%
+                }
+                 
+                %>
+
+
+    	</ul>
+    </div> <!-- end of menu -->
+    
+   <div id="templatemo_header">
+    <div style="width: 415px; height: 91px; text-align: center; margin-left: 493px; margin-top: 31px; position: relative; top: 57px; left: 0px;" 
+          class="style4" >
+        <span class="style5">&quot;POWER</span>
+            COMES NOT FROM 
+        <span class="style5">KNOWLEDGE 
+        KEPT</span>,BUT FROM
+        <span class="style6">KNOWLEDGE SHARED&quot;</span></div>
+    </div> <!-- end of header -->
+    
+  
+    <div id="templatemo_content" class="auto-style2">
+         
+        </div> <!-- end of content left --> 
+                  <div id="templatemo_content_right" >
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+
+    </asp:ContentPlaceHolder>
+                   </div>
+ </div> <!-- end of content -->
+
+ 
+<div style="background-color: #999999; background-image: url('/image/templatemo_footer_bg.jpg'); height: 37px;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<asp:Label ID="Label1" runat="server" Text="Copyright@NISHU.All Rights Reserved" 
+                Font-Bold="True" Font-Size="Small" 
+        style="text-align: center; font-size: large; font-family: 'Times New Roman', Times, serif;"></asp:Label>  
+</div>
+</form>          
+</body>
+</html>
+
+

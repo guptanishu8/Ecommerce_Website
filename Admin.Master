@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Usedbookcafe.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>My Ecommerce site</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+ <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />      
+</head>
+     <style type="text/css">
+        #header {
+            font-family:times New Roman, Times, serif ;
+            font-size: xx-large;
+            font-weight: bolder;
+            color: #6666FF;
+            text-align: center;
+            background-color: none;
+             height: 51px;
+             width: 936px;
+             display:inline;
+         }
+         #footer {
+             height: 29px;
+         }
+         .auto-style1 {
+             width: 108px;
+             height: 74px;
+             margin-bottom: 0px;
+         }
+         
+         
+                       
+         .newStyle1
+         {
+             font-family: "CommercialScript BT";
+             font-size: xx-large;
+             font-weight: bolder;
+             color: #0000FF;
+             visibility: visible;
+         }
+         
+         
+                       
+    </style>
+<body>
+    <form id="form1" runat="server">
+        <div>
+<header id="header"> 
+    &nbsp;&nbsp;&nbsp; 
+   <center>  <asp:Image ID="Image1" runat="server" ImageUrl="~/image/logo.jpg.png"  
+           Height="83px" Width="113px"></asp:Image>USED BOOK CAFE </center>
+    <marquee scrollamount="10" direction="left" padding="5px" 
+                style="top: 103px; left: 0px;  font-size: larger; font-weight: 700; font-family: Verdana" >
+
+        WELCOME TO USED BOOK CAFE
+        </marquee>
+</header>
+     
+
+<div id="templatemo_container">
+	<div id="templatemo_menu">
+    	<ul>
+            <li><a href="Home.aspx" >Home</a></li>
+            <li><a href="EditUser.aspx">Edit User</a></li>
+            <li><a href="EditBook.aspx">Edit Book</a></li> 
+            <li><a href="UserDetails.aspx">User Details</a></li>            
+
+            <li><a href="Logout.aspx" class="auto-style4">Logout</a></li>
+
+
+    	</ul>
+    </div> <!-- end of menu -->
+    
+    <div id="templatemo_header"></div> <!-- end of header -->
+    
+    <div id="templatemo_content">
+    	
+        <!-- end of content left --> 
+               <div >
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+                   </div>
+ </div> <!-- end of content -->
+            
+            
+           
+
+         <footer id ="templatemo_footer">
+           
+            Copyright@NISHU.All Rights Reserved  
+        </footer>
+             </form>
+          
+</body>
+</html>
+

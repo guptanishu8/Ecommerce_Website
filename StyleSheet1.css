@@ -1,0 +1,133 @@
+﻿/*
+CSS Credit: http://www.templatemo.com/
+*/
+body {
+ 
+	 margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+   font-family: Verdana, Arial, san-serif;
+	font-size: 11px;
+    color: #ffffff;
+    background: #ccc;
+  
+}
+
+
+#templatemo_container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: #1c1c1b url(image/templatemo_bg.jpg) repeat-y;
+}
+
+
+/* menu */
+
+#templatemo_menu {
+    clear: both;
+    width: 960px;
+    height: 45px;
+    background: url(image/templatemo_menu_bg.jpg) no-repeat;
+}
+
+    #templatemo_menu ul {
+        padding: 13px 0 0 0;
+        margin: 0;
+        list-style: none;
+    }
+
+        #templatemo_menu ul li {
+            display: inline;
+        }
+
+            #templatemo_menu ul li a {
+                float: left;
+                padding: 0 20px;
+                 font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                text-decoration: none;
+                color: #969547;
+                 font-family: Times New Roman, Times, serif;
+ 
+
+            }
+
+    #templatemo_menu li a:hover, #templatemo_menu li .current {
+        color: #fcf88e;
+    }
+
+/* end of menu*/
+
+/* header */
+#templatemo_header {
+    clear: both;
+    width: 960px;
+    height: 285px;
+    padding: 0;
+    margin: 0;
+    background: url(image/templatemo_header_bg_blank.jpg) no-repeat;
+}
+
+    #templatemo_header a, a:hover {
+        color: #ffffff;
+    }
+
+/* end of header */
+
+
+/* content */
+#templatemo_content {
+    clear: both;
+    width: 920px;
+    padding: 0 20px;
+}
+
+    #templatemo_content #templatemo_content_right {
+        float: right;
+        width: 670px;
+    }
+
+
+#templatemo_content_left .templatemo_content_left_section {
+    clear: both;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2b2b2a;
+    margin-bottom: 20px;
+}
+
+.templatemo_content_left_section h1 {
+    font-size: 14px;
+    color: #cbc750;
+    padding: 0 0 5px 0;
+    margin: 0 0 10px 0;
+    border-bottom: 1px dotted #cbc750;
+}
+
+
+
+    
+        
+
+
+/* end of content */
+
+/* footer */
+#templatemo_footer {
+    clear: both;
+    width: 960px;
+    padding: 20px 0px 20px 0;
+    text-align: center;
+    border-top: 1px solid #25211e;
+    color: #999;
+    background-color: #111110;
+}
+
+    #templatemo_footer a {
+       
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+    }
